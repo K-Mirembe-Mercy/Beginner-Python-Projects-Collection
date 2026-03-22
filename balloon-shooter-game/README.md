@@ -7,7 +7,7 @@ Your goal is to pop as many balloons as possible before they escape!
 
 🖼️ Screenshot
 
-"Game Screenshot" ()
+"Game Screenshot" (Screenshot_20260322_225506_Pydroid 3.jpg)
 
 ---
 
