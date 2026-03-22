@@ -46,7 +46,9 @@ def draw_snake(snake_block, snake_list):
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     game_screen.blit(mesg, [width / 6, height / 3])
-
+if event.type == pygame.MOUSEBUTTONDOWN:
+    x1_change = snake_block
+    y1_change = 0
 # Main function to run the game
 def gameLoop():
     game_over = False
@@ -143,7 +145,20 @@ def gameLoop():
 
         # Control the speed of the snake
         clock.tick(snake_speed)
-
+ for event in pygame.event.get():
+    if event.type == pygame.KEYDOWN:
+        if event.key == pygame.K_LEFT:
+            x1_change = -snake_block
+            y1_change = 0
+        elif event.key == pygame.K_RIGHT:
+            x1_change = snake_block
+            y1_change = 0
+        elif event.key == pygame.K_UP:
+            y1_change = -snake_block
+            x1_change = 0
+        elif event.key == pygame.K_DOWN:
+            y1_change = snake_block
+            x1_change = 0
     pygame.quit()
     quit()
 
