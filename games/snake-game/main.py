@@ -159,7 +159,25 @@ def gameLoop():
         elif event.key == pygame.K_DOWN:
             y1_change = snake_block
             x1_change = 0
-    pygame.quit()
+    if event.type == pygame.MOUSEBUTTONDOWN:
+    x, y = pygame.mouse.get_pos()
+
+    if x < dis_width / 3:
+        x1_change = -snake_block
+        y1_change = 0
+
+    elif x > 2 * dis_width / 3:
+        x1_change = snake_block
+        y1_change = 0
+
+    elif y < dis_height / 3:
+        y1_change = -snake_block
+        x1_change = 0
+
+    elif y > 2 * dis_height / 3:
+        y1_change = snake_block
+        x1_change = 0
+     pygame.quit()
     quit()
 
 # Start the game
