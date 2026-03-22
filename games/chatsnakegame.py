@@ -33,12 +33,12 @@ font_style = pygame.font.SysFont("bahnschrift", 25)
 score_font = pygame.font.SysFont("comicsansms", 35)
 
 # Function to display the score
-def Your_score(score):
+def draw_score(score):
     value = score_font.render("Your Score: " + str(score), True, yellow)
     game_screen.blit(value, [0, 0])
 
 # Function to draw the snake
-def our_snake(snake_block, snake_list):
+def draw_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(game_screen, green, [x[0], x[1], snake_block, snake_block])
 
@@ -53,8 +53,8 @@ def gameLoop():
     game_close = False
 
     # Starting position of the snake
-    x1 = width / 2
-    y1 = height / 2
+    x1 = width // 2
+    y1 = height // 2
 
     # Movement of the snake
     x1_change = 0
@@ -65,15 +65,14 @@ def gameLoop():
     Length_of_snake = 1
 
     # Food position
-    foodx = round(random.randrange(0, width - snake_block) / 10.0) * 10.0
-    foody = round(random.randrange(0, height - snake_block) / 10.0) * 10.0
-
+    foodx = random.randrange(0, width, snake_block)
+    foody = random.randrange(0, height, snake_block)
     while not game_over:
 
         while game_close:
             game_screen.fill(blue)
             message("You Lost! Press Q-Quit or C-Play Again", red)
-            Your_score(Length_of_snake - 1)
+            draw_score(Length_of_snake - 1)
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -82,7 +81,7 @@ def gameLoop():
                         game_over = True
                         game_close = False
                     if event.key == pygame.K_c:
-                        gameLoop()
+                        return
 
         # Check for events (keyboard inputs)
         for event in pygame.event.get():
@@ -129,10 +128,10 @@ def gameLoop():
                 game_close = True
 
         # Draw the snake
-        our_snake(snake_block, snake_List)
+        draw_snake(snake_block, snake_List)
 
         # Display the score
-        Your_score(Length_of_snake - 1)
+        draw_score(Length_of_snake - 1)
 
         pygame.display.update()
 
