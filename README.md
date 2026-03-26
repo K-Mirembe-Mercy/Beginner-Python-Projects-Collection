@@ -80,6 +80,15 @@ This repository is part of my learning journey and serves to:
 - Convert some scripts into full applications
 
 ---
+ 🌟 Featured Projects
+
+Here are some of my key projects:
+
+- 🎮 Snake Game – A simple interactive Python game  
+- 🎈 Balloon Shooter Game – A fun game using loops and logic  
+- 🔍 Binary Search Algorithm – Efficient search implementation  
+
+These projects demonstrate my skills in problem-solving, algorithms, and Python programming.
 
 🤝 Contributing
 
