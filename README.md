@@ -1,4 +1,4 @@
-🐍 Beginner Python Practice Projects Collection
+🐍 Python Practice Projects Collection
 
 Welcome to my Python projects repository!
 This repo contains a variety of beginner-to-intermediate projects, experiments, and exercises created as part of my journey learning Python.
