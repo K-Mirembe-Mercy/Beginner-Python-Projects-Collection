@@ -3,7 +3,6 @@
 Welcome to my Python projects repository!
 This repo contains a variety of beginner-to-intermediate projects, experiments, and exercises created as part of my journey learning Python.
 
----
 
 Overview
 
@@ -15,7 +14,6 @@ This collection showcases my growth as a developer through hands-on coding. Each
 - 📦 Data structures
 - 🧪 Experimentation and creativity
 
----
 
 📂 Project Structure
 
