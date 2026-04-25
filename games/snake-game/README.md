@@ -69,7 +69,11 @@ Q| Quit Game
 <img width="936" height="717" alt="Screenshot_20260425_195202_Pydroid 3" src="https://github.com/user-attachments/assets/48f1764e-54d5-4779-9904-6bcc02561d26" />
 
 
+
+
 <img width="1019" height="782" alt="Screenshot_20260425_195322_Pydroid 3" src="https://github.com/user-attachments/assets/bd1678bf-e455-46ff-be98-6992baa72fc1" />
+
+
 
 
 <img width="917" height="797" alt="Screenshot_20260425_195315_Pydroid 3" src="https://github.com/user-attachments/assets/bdd8e857-f6b0-4d37-9b4f-1d8facd02476" />
